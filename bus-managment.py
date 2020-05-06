@@ -23,14 +23,13 @@ def savedata(ticketData):
     fopen.close()
 
 
-def fetchData():  # this is used when we need to read the data
+def fetchData(): 
     fopen = open('book.txt', 'r')
     data = fopen.read()
     fopen.close()
     return data
 
 
-# main program
 print("------Bus Ticket Management System----------")
 ticketBook = []
 clear = ""
